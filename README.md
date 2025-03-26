@@ -426,7 +426,236 @@ console.log(text.search(/JavaScript/)); // Output: 13
 
 
 
-## 📢 **How to Use This README**
+## JavaScript String Methods (Part 3) 🌟
+
+This document continues with more JavaScript string methods, providing explanations and examples.
+
+---
+
+## 1️⃣ `slice()`
+Extracts a section of a string and returns it as a new string without modifying the original.
+
+**Syntax:**
+```javascript
+string.slice(startIndex, endIndex);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "Hello, World!";
+console.log(str.slice(0, 5)); // Output: "Hello"
+console.log(str.slice(-6));  // Output: "World!"
+```
+
+</details>
+
+---
+
+## 2️⃣ `split()`
+Splits a string into an array based on a specified separator.
+
+**Syntax:**
+```javascript
+string.split(separator, limit);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "apple,banana,grape";
+console.log(str.split(",")); // Output: ["apple", "banana", "grape"]
+console.log(str.split("", 3)); // Output: ["a", "p", "p"]
+```
+
+</details>
+
+---
+
+## 3️⃣ `startsWith()`
+Checks if a string starts with a specified substring.
+
+**Syntax:**
+```javascript
+string.startsWith(searchString, position);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "Hello, World!";
+console.log(str.startsWith("Hello")); // Output: true
+console.log(str.startsWith("World", 7)); // Output: true
+```
+
+</details>
+
+---
+
+## 4️⃣ `substring()`
+Extracts part of a string between two indices.
+
+**Syntax:**
+```javascript
+string.substring(startIndex, endIndex);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "JavaScript";
+console.log(str.substring(0, 4)); // Output: "Java"
+console.log(str.substring(4)); // Output: "Script"
+```
+
+</details>
+
+---
+
+## 5️⃣ `toLocaleLowerCase()`
+Converts a string to lowercase based on locale-specific rules.
+
+**Syntax:**
+```javascript
+string.toLocaleLowerCase();
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "İSTANBUL";
+console.log(str.toLocaleLowerCase("tr-TR")); // Output: "istanbul"
+```
+
+</details>
+
+---
+
+## 6️⃣ `toLocaleUpperCase()`
+Converts a string to uppercase based on locale-specific rules.
+
+**Syntax:**
+```javascript
+string.toLocaleUpperCase();
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "istanbul";
+console.log(str.toLocaleUpperCase("tr-TR")); // Output: "İSTANBUL"
+```
+
+</details>
+
+---
+
+## 7️⃣ `toLowerCase()`
+Converts a string to lowercase.
+
+**Syntax:**
+```javascript
+string.toLowerCase();
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "HELLO WORLD";
+console.log(str.toLowerCase()); // Output: "hello world"
+```
+
+</details>
+
+---
+
+## 8️⃣ `toString()`
+Returns the string representation of an object.
+
+**Syntax:**
+```javascript
+value.toString();
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let num = 123;
+console.log(num.toString()); // Output: "123"
+
+let bool = true;
+console.log(bool.toString()); // Output: "true"
+```
+
+</details>
+
+---
+
+## 9️⃣ `toUpperCase()`
+Converts a string to uppercase.
+
+**Syntax:**
+```javascript
+string.toUpperCase();
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "hello world";
+console.log(str.toUpperCase()); // Output: "HELLO WORLD"
+```
+
+</details>
+
+---
+
+## 🔟 `toWellFormed()`
+Checks if a string is well-formed Unicode.
+
+**Syntax:**
+```javascript
+string.toWellFormed();
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "Hello";
+console.log(str.toWellFormed()); // Output: true
+```
+
+</details>
+
+---
+
+### 📌 **Summary Table**
+| Method | Purpose |
+|--------|---------|
+| `slice()` | Extracts part of a string |
+| `split()` | Splits a string into an array |
+| `startsWith()` | Checks if string starts with substring |
+| `substring()` | Extracts substring between two indices |
+| `toLocaleLowerCase()` | Converts to lowercase (locale-aware) |
+| `toLocaleUpperCase()` | Converts to uppercase (locale-aware) |
+| `toLowerCase()` | Converts to lowercase |
+| `toString()` | Converts value to string |
+| `toUpperCase()` | Converts to uppercase |
+| `toWellFormed()` | Checks Unicode well-formedness |
+
+---
+
+## 📢 **Usage Notes**
 - Click the dropdown arrows to expand and see examples.
 - Copy-paste the code snippets to test in your JavaScript console.
 
@@ -434,4 +663,5 @@ console.log(text.search(/JavaScript/)); // Output: 13
 
 ### 🚀 **Contributions**
 Feel free to contribute by adding more examples or explanations!
+
 
