@@ -118,6 +118,111 @@ console.log(fullName); // Output: "John Doe"
 
 ---
 
+
+## 6️⃣ `endsWith()`
+Checks if a string ends with a specified substring.
+
+**Syntax:**
+```javascript
+string.endsWith(searchString, length);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "Hello World";
+console.log(str.endsWith("World")); // Output: true
+console.log(str.endsWith("Hello")); // Output: false
+```
+
+</details>
+
+---
+
+## 7️⃣ `includes()`
+Determines whether a string contains a specified substring.
+
+**Syntax:**
+```javascript
+string.includes(searchString, position);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "JavaScript is awesome";
+console.log(str.includes("JavaScript")); // Output: true
+console.log(str.includes("Python")); // Output: false
+```
+
+</details>
+
+---
+
+## 8️⃣ `indexOf()`
+Returns the first occurrence index of a specified substring, or -1 if not found.
+
+**Syntax:**
+```javascript
+string.indexOf(searchValue, fromIndex);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "JavaScript is fun";
+console.log(str.indexOf("is")); // Output: 11
+console.log(str.indexOf("Python")); // Output: -1
+```
+
+</details>
+
+---
+
+## 9️⃣ `isWellFormed()`
+Checks if a string contains valid Unicode characters.
+
+**Syntax:**
+```javascript
+string.isWellFormed();
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let validStr = "Hello";
+console.log(validStr.isWellFormed()); // Output: true
+```
+
+</details>
+
+---
+
+## 🔟 `lastIndexOf()`
+Returns the last occurrence index of a specified substring, or -1 if not found.
+
+**Syntax:**
+```javascript
+string.lastIndexOf(searchValue, fromIndex);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "JavaScript JavaScript";
+console.log(str.lastIndexOf("JavaScript")); // Output: 11
+```
+
+</details>
+
+
+
+
 ## 📢 **How to Use This README**
 - Click the dropdown arrows to expand and see examples.
 - Copy-paste the code snippets to test in your JavaScript console.
