@@ -2,7 +2,7 @@
 
 This document provides an overview of key JavaScript string methods with explanations and examples.
 
-## 1️⃣ `at()`
+##  `at()`
 Returns the character at a given index. Supports negative indexing.
 
 **Syntax:**
@@ -23,7 +23,7 @@ console.log(str.at(-1)); // Output: 't' (last character)
 
 ---
 
-## 2️⃣ `charAt()`
+##  `charAt()`
 Returns the character at a specific index.
 
 **Syntax:**
@@ -44,7 +44,7 @@ console.log(str.charAt(6)); // Output: 'W'
 
 ---
 
-## 3️⃣ `charCodeAt()`
+##  `charCodeAt()`
 Returns the Unicode (ASCII) value of the character at a specific index.
 
 **Syntax:**
@@ -65,7 +65,7 @@ console.log(text.charCodeAt(1)); // Output: 66 (Unicode of 'B')
 
 ---
 
-## 4️⃣ `codePointAt()`
+##  `codePointAt()`
 Returns the Unicode code point of a character at a specified index. Useful for emojis or special symbols.
 
 **Syntax:**
@@ -85,7 +85,7 @@ console.log(emoji.codePointAt(0)); // Output: 128150
 
 ---
 
-## 5️⃣ `concat()`
+##  `concat()`
 Joins two or more strings together.
 
 **Syntax:**
@@ -119,7 +119,7 @@ console.log(fullName); // Output: "John Doe"
 ---
 
 
-## 6️⃣ `endsWith()`
+##  `endsWith()`
 Checks if a string ends with a specified substring.
 
 **Syntax:**
@@ -140,7 +140,7 @@ console.log(str.endsWith("Hello")); // Output: false
 
 ---
 
-## 7️⃣ `includes()`
+##  `includes()`
 Determines whether a string contains a specified substring.
 
 **Syntax:**
@@ -161,7 +161,7 @@ console.log(str.includes("Python")); // Output: false
 
 ---
 
-## 8️⃣ `indexOf()`
+##  `indexOf()`
 Returns the first occurrence index of a specified substring, or -1 if not found.
 
 **Syntax:**
@@ -182,7 +182,7 @@ console.log(str.indexOf("Python")); // Output: -1
 
 ---
 
-## 9️⃣ `isWellFormed()`
+##  `isWellFormed()`
 Checks if a string contains valid Unicode characters.
 
 **Syntax:**
@@ -202,7 +202,7 @@ console.log(validStr.isWellFormed()); // Output: true
 
 ---
 
-## 🔟 `lastIndexOf()`
+##  `lastIndexOf()`
 Returns the last occurrence index of a specified substring, or -1 if not found.
 
 **Syntax:**
@@ -432,7 +432,7 @@ This document continues with more JavaScript string methods, providing explanati
 
 ---
 
-## 1️⃣ `slice()`
+##  `slice()`
 Extracts a section of a string and returns it as a new string without modifying the original.
 
 **Syntax:**
@@ -453,7 +453,7 @@ console.log(str.slice(-6));  // Output: "World!"
 
 ---
 
-## 2️⃣ `split()`
+##  `split()`
 Splits a string into an array based on a specified separator.
 
 **Syntax:**
@@ -474,7 +474,7 @@ console.log(str.split("", 3)); // Output: ["a", "p", "p"]
 
 ---
 
-## 3️⃣ `startsWith()`
+##  `startsWith()`
 Checks if a string starts with a specified substring.
 
 **Syntax:**
@@ -495,7 +495,7 @@ console.log(str.startsWith("World", 7)); // Output: true
 
 ---
 
-## 4️⃣ `substring()`
+##  `substring()`
 Extracts part of a string between two indices.
 
 **Syntax:**
@@ -516,7 +516,7 @@ console.log(str.substring(4)); // Output: "Script"
 
 ---
 
-## 5️⃣ `toLocaleLowerCase()`
+##  `toLocaleLowerCase()`
 Converts a string to lowercase based on locale-specific rules.
 
 **Syntax:**
@@ -536,7 +536,7 @@ console.log(str.toLocaleLowerCase("tr-TR")); // Output: "istanbul"
 
 ---
 
-## 6️⃣ `toLocaleUpperCase()`
+##  `toLocaleUpperCase()`
 Converts a string to uppercase based on locale-specific rules.
 
 **Syntax:**
@@ -556,7 +556,7 @@ console.log(str.toLocaleUpperCase("tr-TR")); // Output: "İSTANBUL"
 
 ---
 
-## 7️⃣ `toLowerCase()`
+##  `toLowerCase()`
 Converts a string to lowercase.
 
 **Syntax:**
@@ -576,7 +576,7 @@ console.log(str.toLowerCase()); // Output: "hello world"
 
 ---
 
-## 8️⃣ `toString()`
+##  `toString()`
 Returns the string representation of an object.
 
 **Syntax:**
@@ -599,7 +599,7 @@ console.log(bool.toString()); // Output: "true"
 
 ---
 
-## 9️⃣ `toUpperCase()`
+##  `toUpperCase()`
 Converts a string to uppercase.
 
 **Syntax:**
@@ -619,7 +619,7 @@ console.log(str.toUpperCase()); // Output: "HELLO WORLD"
 
 ---
 
-## 🔟 `toWellFormed()`
+##  `toWellFormed()`
 Checks if a string is well-formed Unicode.
 
 **Syntax:**
@@ -655,7 +655,110 @@ console.log(str.toWellFormed()); // Output: true
 
 ---
 
-## 📢 **Usage Notes**
+
+###  `trim()`
+Removes whitespace from both ends of a string.
+
+**Syntax:**
+```javascript
+string.trim();
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "   Hello World!   ";
+console.log(str.trim()); // Output: "Hello World!"
+```
+
+</details>
+
+---
+
+###  `trimEnd()`
+Removes whitespace from the end of a string.
+
+**Syntax:**
+```javascript
+string.trimEnd();
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "   Hello World!   ";
+console.log(str.trimEnd()); // Output: "   Hello World!"
+```
+
+</details>
+
+---
+
+###  `trimStart()`
+Removes whitespace from the beginning of a string.
+
+**Syntax:**
+```javascript
+string.trimStart();
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "   Hello World!   ";
+console.log(str.trimStart()); // Output: "Hello World!   "
+```
+
+</details>
+
+---
+
+###  `valueOf()`
+Returns the primitive value of a string object.
+
+**Syntax:**
+```javascript
+string.valueOf();
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = new String("Hello");
+console.log(str.valueOf()); // Output: "Hello"
+```
+
+</details>
+
+---
+
+###  `Symbol.iterator`
+Allows iteration over the characters of a string.
+
+**Syntax:**
+```javascript
+string[Symbol.iterator];
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "Hello";
+let iterator = str[Symbol.iterator]();
+console.log(iterator.next().value); // Output: "H"
+console.log(iterator.next().value); // Output: "e"
+```
+
+</details>
+
+---
+
+### 📢 **How to Use This README**
 - Click the dropdown arrows to expand and see examples.
 - Copy-paste the code snippets to test in your JavaScript console.
 
@@ -663,5 +766,6 @@ console.log(str.toWellFormed()); // Output: true
 
 ### 🚀 **Contributions**
 Feel free to contribute by adding more examples or explanations!
+
 
 
