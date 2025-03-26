@@ -219,7 +219,210 @@ console.log(str.lastIndexOf("JavaScript")); // Output: 11
 ```
 
 </details>
+...
 
+## `localeCompare()`
+Compares two strings in the current locale.
+
+**Syntax:**
+```javascript
+string1.localeCompare(string2);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+console.log("apple".localeCompare("banana")); // Output: -1
+console.log("grape".localeCompare("grape")); // Output: 0
+console.log("zebra".localeCompare("ant")); // Output: 1
+```
+
+</details>
+
+---
+
+## `match()`
+Retrieves the result of matching a string against a regular expression.
+
+**Syntax:**
+```javascript
+string.match(regexp);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let text = "I love JavaScript!";
+console.log(text.match(/love/)); // Output: ["love", index: 2, input: "I love JavaScript!"]
+console.log(text.match(/o/g)); // Output: ["o", "o"]
+```
+
+</details>
+
+---
+
+## `matchAll()`
+Returns an iterator of all matched results using a regular expression.
+
+**Syntax:**
+```javascript
+string.matchAll(regexp);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "test1 test2 test3";
+let regex = /test(\d)/g;
+
+for (let match of str.matchAll(regex)) {
+    console.log(match);
+}
+```
+
+</details>
+
+---
+
+## `normalize()`
+Normalizes a Unicode string.
+
+**Syntax:**
+```javascript
+string.normalize([form]);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let str = "ç"; // 'c' with cedilla
+console.log(str.normalize("NFC"));
+```
+
+</details>
+
+---
+
+## `padEnd()`
+Pads the string with another string until the desired length is reached.
+
+**Syntax:**
+```javascript
+string.padEnd(targetLength, padString);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+console.log("123".padEnd(5, "0")); // Output: "12300"
+```
+
+</details>
+
+---
+
+## `padStart()`
+Pads the string from the beginning until the desired length is reached.
+
+**Syntax:**
+```javascript
+string.padStart(targetLength, padString);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+console.log("123".padStart(5, "0")); // Output: "00123"
+```
+
+</details>
+
+---
+
+## `repeat()`
+Repeats the string a specified number of times.
+
+**Syntax:**
+```javascript
+string.repeat(count);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+console.log("Hello ".repeat(3)); // Output: "Hello Hello Hello "
+```
+
+</details>
+
+---
+
+## `replace()`
+Replaces a substring or pattern in a string.
+
+**Syntax:**
+```javascript
+string.replace(searchValue, newValue);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let text = "I love JavaScript";
+console.log(text.replace("JavaScript", "Python")); // Output: "I love Python"
+```
+
+</details>
+
+---
+
+## `replaceAll()`
+Replaces all occurrences of a substring.
+
+**Syntax:**
+```javascript
+string.replaceAll(searchValue, newValue);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let text = "Hello world, world!";
+console.log(text.replaceAll("world", "everyone")); // Output: "Hello everyone, everyone!"
+```
+
+</details>
+
+---
+
+## `search()`
+Searches for a match using a regular expression and returns the index of the match.
+
+**Syntax:**
+```javascript
+string.search(regexp);
+```
+
+<details>
+  <summary>Click to see examples</summary>
+
+```javascript
+let text = "Find the word JavaScript in this sentence.";
+console.log(text.search(/JavaScript/)); // Output: 13
+```
+
+</details>
+
+---
 
 
 
